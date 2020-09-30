@@ -27,11 +27,10 @@
             android:textSize="22sp" />
 
         <RelativeLayout
+            android:id="@+id/expandable_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/expandable_layout"
-            android:visibility="visible"
-            >
+            android:visibility="visible">
 
 
             <Button
@@ -39,20 +38,22 @@
                 android:layout_width="49dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="-6dp"
+                android:layout_marginBottom="-6dp"
                 android:background="@android:drawable/ic_delete"
                 android:padding="16dp"
-                android:textSize="8sp" />
+                android:textSize="12sp" />
 
             <TextView
+                android:id="@+id/_description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/_description"
-                android:text="Description"
                 android:fontFamily="@font/delius"
+                android:padding="16dp"
+                android:text="Description"
                 android:textColor="@color/darkGrayColor"
                 android:textSize="18sp"
-                android:padding="16dp"
 
                 />
 

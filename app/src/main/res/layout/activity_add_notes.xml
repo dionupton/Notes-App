@@ -6,52 +6,64 @@
     android:layout_height="match_parent"
     tools:context=".AddNotesActivity">
 
-    <EditText
-        android:id="@+id/title_EditText"
-        android:layout_width="309dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="122dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginRight="48dp"
-        android:layout_marginBottom="97dp"
-        android:hint="Title"
-        android:padding="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/description_EditText"
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.288">
 
-    <EditText
-        android:id="@+id/description_EditText"
-        android:layout_width="320dp"
-        android:layout_height="231dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginRight="48dp"
-        android:layout_marginBottom="90dp"
-        android:hint="Contents"
-        android:padding="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/saveNotesButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title_EditText" />
+        <LinearLayout
+            android:layout_width="325dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/title_EditText"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="84dp"
+                android:layout_marginEnd="48dp"
+                android:fontFamily="@font/delius"
+                android:hint="Title"
+                android:padding="1dp"
+                android:singleLine="true"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/description_EditText"
+                android:layout_width="match_parent"
+                android:layout_height="236dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="48dp"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="@font/delius"
+                android:hint="Contents"
+                android:padding="1dp"
+                android:textAlignment="center"
+                android:typeface="normal" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
     <Button
         android:id="@+id/saveNotesButton"
         android:layout_width="302dp"
         android:layout_height="65dp"
         android:layout_marginStart="55dp"
-        android:layout_marginLeft="55dp"
         android:layout_marginEnd="55dp"
-        android:layout_marginRight="55dp"
-        android:layout_marginBottom="85dp"
+        android:layout_marginBottom="152dp"
+        android:backgroundTint="@color/colorAccent"
+        android:fontFamily="@font/delius"
         android:text="Save"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/description_EditText" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
