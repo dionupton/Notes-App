@@ -13,7 +13,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/cardview_light_background"
+        android:background="@color/whiteColour"
         android:orientation="vertical"
         android:padding="8dp">
 
@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/delius"
             android:padding="16dp"
-            android:text="TITLE"
+            android:text="@string/title"
             android:textSize="22sp" />
 
         <RelativeLayout
@@ -51,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/delius"
                 android:padding="16dp"
-                android:text="Description"
+                android:text="@string/description"
                 android:textColor="@color/darkGrayColor"
                 android:textSize="18sp"
 

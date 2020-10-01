@@ -70,7 +70,7 @@ class AddNotesActivity : AppCompatActivity() {
             finish()
 
         }catch(e:Exception){
-            Toast.makeText(this, "Note failed to add to database " + e, Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Note failed to add to realm " + e, Toast.LENGTH_LONG).show()
 
         }
     }

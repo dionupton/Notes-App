@@ -30,10 +30,12 @@
                 android:layout_marginTop="84dp"
                 android:layout_marginEnd="48dp"
                 android:fontFamily="@font/delius"
-                android:hint="Title"
+                android:hint="@string/add_notes_title"
+                android:inputType="textShortMessage"
                 android:padding="1dp"
                 android:singleLine="true"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:autofillHints="" />
 
             <EditText
                 android:id="@+id/description_EditText"
@@ -42,12 +44,14 @@
                 android:layout_marginStart="48dp"
                 android:layout_marginEnd="48dp"
                 android:layout_marginBottom="24dp"
-                android:fontFamily="@font/delius"
-                android:hint="Contents"
-                android:padding="1dp"
                 android:background="@android:color/transparent"
+                android:fontFamily="@font/delius"
+                android:hint="@string/contents"
+                android:inputType="textLongMessage"
+                android:padding="1dp"
                 android:textAlignment="center"
-                android:typeface="normal" />
+                android:typeface="normal"
+                android:importantForAutofill="no" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -61,7 +65,7 @@
         android:layout_marginBottom="84dp"
         android:backgroundTint="@color/colorAccent"
         android:fontFamily="@font/delius"
-        android:text="Save"
+        android:text="@string/save"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
